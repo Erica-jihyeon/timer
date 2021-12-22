@@ -17,7 +17,8 @@ if (args.length === 0) {
 else {
   for (const time of args) {
     setTimeout(() => {
+      //beep sound
       process.stdout.write('\x07');
-    }, time*1000);
+    }, time * 1000);
   }
 }
